@@ -108,6 +108,7 @@ os.system("clear")
 usrname = input("Username: ")
 psswd = getpass.getpass("Password: ")
 login = WebpageZte(usrname,psswd)
+login.LoginShodan()
 
 planTarget = int(input("Input many search: "))
 tempUserInput = []
@@ -115,8 +116,6 @@ tempUserInput = []
 for i in range(0,planTarget):
     userInput = input("Input Target: ")
     tempUserInput.append(userInput)
-
-login.LoginShodan()
 
 for x in range(0,len(tempUserInput)):
     url="https://www.shodan.io/search?query={link}+country%3Aid&language=en".format(link = tempUserInput[x])

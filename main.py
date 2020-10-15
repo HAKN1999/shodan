@@ -1,6 +1,6 @@
 #!/usr/bin/ python
 # coding: utf-8
-
+#hafizd kurniawan here
 from webbot import Browser
 import time
 import mechanize
